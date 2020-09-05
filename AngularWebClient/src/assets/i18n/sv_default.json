@@ -1,4 +1,8 @@
 {
   "icarus.site.title": "Icarus Test Site",
-  "icarus.site.description":  "En hemsida för att testa saker o det då va."
+  "icarus.site.description": "En hemsida för att testa saker o det då va.",
+
+  "icarus.dashboard.title": "Dashboard",
+
+  "icarus.about.title":  "Om hemsidan"
 }

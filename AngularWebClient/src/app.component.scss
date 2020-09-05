@@ -1,0 +1,19 @@
+app-header {
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+mat-drawer-container {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  mat-drawer {
+      width: 300px;
+      max-width: 100%;
+  }
+
+  mat-drawer-content {
+      padding: 30px;
+  }
+}

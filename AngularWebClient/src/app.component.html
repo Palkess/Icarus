@@ -1,0 +1,23 @@
+<app-header>
+  <div menu>
+    <button type="button" mat-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+</app-header>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
+    <app-navigation></app-navigation>
+  </mat-drawer>
+
+  <mat-drawer-content>
+
+    <router-outlet></router-outlet>
+
+    <app-footer></app-footer>
+  </mat-drawer-content>
+  
+
+</mat-drawer-container>
+
+

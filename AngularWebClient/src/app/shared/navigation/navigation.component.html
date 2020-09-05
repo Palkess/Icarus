@@ -1,0 +1,16 @@
+<mat-nav-list>
+  <ng-container *ngFor="let link of menuLinks">
+    <mat-list-item [routerLink]="[link.path]" [ngClass]="{ 'active': router.isActive(link.path, true) }">
+      <a matLine>{{link.name}}</a>
+      <mat-icon *ngIf="link.icon">{{link.icon}}</mat-icon>
+    </mat-list-item>
+    <div class="submenu" *ngIf="link.children">
+      <ng-container *ngFor="let childLink of link.children">
+        <mat-list-item class="submenu--link" [routerLink]="[childLink.path]" [ngClass]="{ 'active': router.isActive(childLink.path, true) }">
+          <a matLine>{{childLink.name}}</a>
+          <mat-icon *ngIf="childLink.icon">{{childLink.icon}}</mat-icon>
+        </mat-list-item>
+      </ng-container>
+    </div>
+  </ng-container>
+</mat-nav-list>
