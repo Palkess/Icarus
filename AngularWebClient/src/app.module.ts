@@ -23,6 +23,7 @@ import { FooterComponent } from './app/shared/footer/footer.component';
 import { NavigationComponent } from './app/shared/navigation/navigation.component';
 import { AboutComponent } from './app/modules/about/about.component';
 import { DashboardComponent } from './app/modules/dashboard/dashboard.component';
+import { RootStoreModule } from './app/stores/root-store.module';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { DashboardComponent } from './app/modules/dashboard/dashboard.component'
         deps: [HttpClient]
       }
     }),
+    RootStoreModule,
   ],
   providers: [
     Title

@@ -22,6 +22,17 @@ const routes: Routes = [
       showInMenu: true,
       icon: 'info'
     },
+    children: [
+      {
+        path: 'test',
+        component: AboutComponent,
+        data: {
+          title: 'Annan title',
+          showInMenu: true,
+          icon: 'info'
+        },
+      },
+    ]
   },
 ];
 

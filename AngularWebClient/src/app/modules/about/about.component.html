@@ -1,3 +1,11 @@
 <mat-card>
   <h1>{{'icarus.about.title' | translate}}</h1> 
 </mat-card>
+
+<ng-container *ngIf="items$ | async as items">
+  <button mat-button (click)="changeState(items)">Ändra state</button>
+
+  <div mat-line *ngFor="let feature of items">
+    {{feature.id}}
+  </div>
+</ng-container>

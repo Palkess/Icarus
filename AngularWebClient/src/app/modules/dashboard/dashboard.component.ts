@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TitleService } from '../../services/title.service';
+import { TitleService } from '../../data/services/title.service';
 
 @Component({
   selector: 'dashboard',
@@ -8,12 +8,9 @@ import { TitleService } from '../../services/title.service';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(
-    private _titleService: TitleService
-  ) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this._titleService.setTitle("Dashboard");
   }
 
 }
